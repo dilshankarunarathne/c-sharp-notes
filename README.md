@@ -78,3 +78,4 @@ using System.Runtime.InteropServices;
 
 All these attributes are for assembly identification or assembly manifest. 
 
+Under references tab, you will be able to see any assemblies that the project is referencing. 
