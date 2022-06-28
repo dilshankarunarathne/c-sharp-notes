@@ -276,14 +276,16 @@ C# strings are immutable, which means once you create them, you cannot change th
 
 ### String vs string 
 
-Remember, all types in C# map to a type in .NET Framework. So, the “string” type in C# (all
-lowercase), maps to the String class in .NET, which means we can declare a string in either of
-the following ways:
+Remember, all types in C# map to a type in .NET Framework. So, the “string” type in C# (all lowercase), maps to the String class in .NET, which means we can declare a string in either of the following ways:
+```cs
 string name;
 String name;
-The only difference is that if you use the String type, you need to import the System namespace
-on top of the file, because that’s where the String class is defined.
+```
+
+The only difference is that if you use the `String` type, you need to import the `System` namespace on top of the file, because that’s where the `String` class is defined. 
+```cs
 using System;
+```
 
 Escape Characters
 There are few special characters in C# called escape characters:
