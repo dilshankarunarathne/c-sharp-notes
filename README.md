@@ -28,8 +28,8 @@ VS is highly recommended for C# developing.
 In its solution explorer, You will be able to see `AssemblyInfo.cs` file. It contains all the information for an assembly that can be created with your project. If you ever think of distributing an assembly, you should probably fill all the details in there.  
 
 <details>
-  <summary>`AssemblyInfo.cs`</summary>
-	```cs
+  <summary><code>AssemblyInfo.cs</code></summary>
+	<code>
 	using System.Reflection;
 	using System.Runtime.CompilerServices;
 	using System.Runtime.InteropServices;
@@ -66,7 +66,7 @@ In its solution explorer, You will be able to see `AssemblyInfo.cs` file. It con
 	// [assembly: AssemblyVersion("1.0.*")]
 	[assembly: AssemblyVersion("1.0.0.0")]
 	[assembly: AssemblyFileVersion("1.0.0.0")]
-	```
+	</code>
 </details>
 
 All these attributes are for assembly identification or assembly manifest. 
