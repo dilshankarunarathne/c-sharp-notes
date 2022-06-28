@@ -244,21 +244,34 @@ numbers[0] = 1;
 Note that in C# arrays are zero-indexed. So the first element has index 0.
 
 # Strings 
-A string is a sequence of characters. In C# a string is surrounded by double quotes, whereas a
-character is surrounded by a single quote.
+
+A string is a sequence of characters. In C# a string is surrounded by double quotes, whereas a character is surrounded by a single quote.
+```cs
 string name = “Mosh”;
 char ch = ‘A’;
-There are a few different ways to create a string:
-Using a string literal:
+```
+
+There are a few different ways to create a string:  
+* Using a string literal:
+```cs
 string firstName = “Mosh”;
-Using concatenation: useful if you wanna combine two or more strings.
+```
+* Using concatenation: useful if you wanna combine two or more strings.
+```cs
 string name = firstName + “ “ + lastName;
-Using string.Format: cleaner than concatenating multiple strings since you can see the output.
+```
+* Using `string.Format`: cleaner than concatenating multiple strings since you can see the output.
+```cs
 string name = string.Format(“{0} {1}”, firstName, lastName);
-Using string.Join: useful when you have an array and would like to join all elements of that
-array with a character:
+```
+* Using `string.Join`: useful when you have an array and would like to join all elements of that array with a character:
+```cs
 var numbers = new int[3] { 1, 2, 3 }
 string list = string.Join(“,”, numbers);
+```
+
+<br />
+
 C# strings are immutable, which means once you create them, you cannot change their value or
 any of their characters. The String class has a few methods for modifying strings, but all these
 methods return a new string and do not modify the original string.
