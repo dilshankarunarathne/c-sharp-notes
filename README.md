@@ -182,9 +182,18 @@ Note: fields and properties are technically different in C# but conceptually the
 An object is an instance of a class. At runtime, many objects collaborate with each other to provide some functionality. 
 Note that even though there is a slight different between the word Class and Object, these words are often used interchangeably.  
 To create a class:
+```cs
 public class Person
 {
+	public string Name;
+	public void Introduce()
+	{
+		Console.WriteLine(“My name is “ + Name);
+	}
 }
-Here, public is what we call an access modifier. It determines whether a class is visible to other
-classes or not. Access modifiers are beyond the scope of this course and I’ve covered them in
-the second part of this course: C# Intermediate.
+```
+
+Here, public is what we call an access modifier. It determines whether a class is visible to other classes or not. 
+
+
+
