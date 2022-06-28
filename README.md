@@ -212,5 +212,19 @@ When applied to a class member (field or method), makes that member accessible o
 We use static members in situations where we want only one instance of that member to exist in memory. As an example, the Main method in every program is declared as static, because we need only one entry point to the application.  
 In the real-world, it’s best to stay away from static as much as you can because that makes writing automated tests for applications hard. 
 
-
+# Structs 
+A struct (structure) is a type similar to a class. It combines related fields and methods together.
+```cs
+public struct RgbColor
+{
+	public int Red;
+	public int Green;
+	public int Blue;
+}
+```
+Use structs only when creating small lightweight objects. That is for a subtle performance
+optimization. In the real-world, 99% of the time, you create new types using classes, not
+structures.
+In .NET, all primitive types are declared as a structure. They are small and lightweight. The
+biggest primitive type doesn’t take more than 16 bytes.
 
