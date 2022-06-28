@@ -224,9 +224,8 @@ public struct RgbColor
 	public int Blue;
 }
 ```
-Use structs only when creating small lightweight objects. That is for a subtle performance
-optimization. In the real-world, 99% of the time, you create new types using classes, not
-structures.
-In .NET, all primitive types are declared as a structure. They are small and lightweight. The
-biggest primitive type doesn’t take more than 16 bytes.
+Use structs only when creating small lightweight objects. That is for a subtle performance optimization. In the real-world, 99% of the time, you create new types using classes, not structures.  
+In .NET, all primitive types are declared as a structure. They are small and lightweight. The biggest primitive type doesn’t take more than 16 bytes. 
+
+
 
