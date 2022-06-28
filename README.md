@@ -106,5 +106,6 @@ Each C# types maps to their corresponding .Net types. When we compile our applic
 
 Double is the default floating point data type in C#. If we want a float or a decimal, we need to explicitly tell the compiler that by post-fixing the value with `f` or `m`.  
 
+C# don't have overflow checking. If we increment a number out of its type range, it will fall back to 0. 
 
 
