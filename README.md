@@ -128,5 +128,5 @@ We can use **format strings** in C# for easier console outputs.
 Console.WriteLine("Byte Min:{0} and Max:{1}", byte.MinValue, byte.MaxValue);
 ```
 
-
+We can declare constant values using `const` keyword. This keyword comes before the data type. 
 
