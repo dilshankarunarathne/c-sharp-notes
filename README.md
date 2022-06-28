@@ -193,7 +193,16 @@ public class Person
 }
 ```
 
-Here, public is what we call an access modifier. It determines whether a class is visible to other classes or not. 
+Here, public is what we call an access modifier. It determines whether a class is visible to other classes or not.  
+Here void means this method does not return a value.  
+To create an object, we use the new operator:
+```cs
+Person person = new Person();
+```
+A cleaner way of writing the same code is:
+```cs
+var person = new Person();
+```
 
 
 
