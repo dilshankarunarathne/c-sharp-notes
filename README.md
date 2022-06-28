@@ -349,4 +349,33 @@ Here, both array1 and array2 reference (or point) the same array object in memor
 
 Remember: arrays and strings are classes, so they are reference types. Any custom classes you define will also be a value type.
 
+# Enums 
+
+An enum is a data type that represents a set of name/value pairs. Use enums when you need to define multiple related constants. 
+```cs
+public enum ShippingMethod
+{
+	Regular = 1,
+	Express = 2
+}
+```
+Now we can declare a variable of type ShippingMethod enum and use the dot notation
+to initialize it:
+var method = ShippingMethod.Express;
+
+Enums are internally integers. So you can easily cast them to and from an int:
+var methodId = 1;
+var method = (ShippingMethod)methodId;
+var method = ShippingMethod.Express;
+var methodId = (int)method;
+To convert an enum to a string use the ToString method. Every object in C# has this
+method and can be converted to a string:
+var method = ShippingMethod.Express;
+
+var methodName = method.ToString();
+To convert a string to an enum (called parsing), use Enum.Parse:
+var method = (ShippingMethod)Enum.Parse(typeof(ShippingMethod),
+methodName);
+
+
 
