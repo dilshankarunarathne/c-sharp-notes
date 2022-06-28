@@ -347,6 +347,6 @@ array2[0] = 0;
 
 Here, both array1 and array2 reference (or point) the same array object in memory. So, after the third line, the first element of both array1 and array2 will be 0. 
 
-
+Remember: arrays and strings are classes, so they are reference types. Any custom classes you define will also be a value type.
 
 
