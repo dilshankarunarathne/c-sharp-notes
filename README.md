@@ -338,15 +338,15 @@ Remember: Primitive types are structures so they are value types. Any custom str
 
 ## Reference Types 
 
-With a reference type, however, the reference (or memory address) of the object is
-copied to the target variable. This means: if you copy a reference type to another
-variable, any changes you make to the object referenced by either of these variables,
-will be visible through the other variable.
+With a reference type, however, the reference (or memory address) of the object is copied to the target variable. This means: if you copy a reference type to another variable, any changes you make to the object referenced by either of these variables, will be visible through the other variable. 
+```cs
 var array1 = new int[3] { 1, 2, 3 };
 var array2 = array1;
 array2[0] = 0;
-Here, both array1 and array2 reference (or point) the same array object in memory. So,
-after the third line, the first element of both array1 and array2 will be 0.
+```
+
+Here, both array1 and array2 reference (or point) the same array object in memory. So, after the third line, the first element of both array1 and array2 will be 0. 
+
 
 
 
