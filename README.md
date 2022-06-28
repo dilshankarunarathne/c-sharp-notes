@@ -155,4 +155,8 @@ int i = Convert.ToInt32(s);
 ```
 
 **Convert** class has a number of methods for converting values to various types.
-
+```cs
+string s = "1";
+int i = Convert.ToInt32(s);
+int j = int.Parse(s);
+```
