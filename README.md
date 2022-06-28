@@ -141,20 +141,18 @@ byte b = 1;
 int i = b;
 ```
 Here because b is a byte and takes only 1 byte of memory, we can easily convert it to an int, which takes 4 bytes. So we don't need to do anything. 
-* If the target type, however, is smaller than the source type, the compiler will generate an error.
-The reason for that is that overflow may happen as part of the conversion. For example, if you
-have an int with the value 1000, you cannot store it in a byte because the max value a byte can
-store is 255. In this case, some of the bits will be lost in memory. And that's the reason compiler warns you about these scenarios. If you're sure that no bits will be lost as part of the conversion,
-you can tell the compiler that you're aware of the overflow and would still like the conversion to
+* If the target type, however, is smaller than the source type, the compiler will generate an error. The reason for that is that overflow may happen as part of the conversion. For example, if you have an int with the value 1000, you cannot store it in a byte because the max value a byte can store is 255. In this case, some of the bits will be lost in memory. And that's the reason compiler warns you about these scenarios. If you're sure that no bits will be lost as part of the conversion, you can tell the compiler that you're aware of the overflow and would still like the conversion to
 happen. In this case, you use a cast:
+```cs
 int i = 1;
 byte b = (byte)i;
-In this example, our int holds the value 1, which can perfectly be stored in a byte. So, we use a
-cast to tell the compiler to ignore the overflow. A cast means prefixing the variable with the target
-type. So here we are casting the variable i to a byte in the second line.
-Finally, if the source and target type are not compatible (eg a string and a number), you need to
-use the Convert class.
+```
+In this example, our int holds the value 1, which can perfectly be stored in a byte. So, we use a cast to tell the compiler to ignore the overflow. A cast means prefixing the variable with the target type. So here we are casting the variable i to a byte in the second line.
+* Finally, if the source and target type are not compatible (eg a string and a number), you need to use the Convert class.
+```cs
 string s = “1234”;
 int i = Convert.ToInt32(s);
-Convert class has a number of methods for converting values to various types.
+```
+
+**Convert** class has a number of methods for converting values to various types.
 
