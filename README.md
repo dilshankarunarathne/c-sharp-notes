@@ -119,5 +119,4 @@ checked
 
 <br /> 
 
-There is a `var` keyword in C#. 
 
