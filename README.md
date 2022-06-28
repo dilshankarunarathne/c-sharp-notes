@@ -186,6 +186,7 @@ To create a class:
 public class Person
 {
 	public string Name;
+	
 	public void Introduce()
 	{
 		Console.WriteLine(“My name is “ + Name);
