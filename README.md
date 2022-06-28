@@ -18,5 +18,5 @@ These functions/methods add behavior by execution/doing-things for us.
 Data represents the state of the application.  
 
 As the number of classes in our application grows, we need a way to organize these classes. That's why we need **namespaces**. A namespace is a container for related classes.  
-
+In a real-world application, as these namespaces grow - we need another way of partitioning our application. That's where we use an **Assembly** (DLL or EXE). An assembly is a container for related namespaces. 
 
