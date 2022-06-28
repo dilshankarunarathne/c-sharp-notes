@@ -100,6 +100,8 @@ The class `Console` can be used to read data from the console or to write data t
 
 # Variables & Data Types 
 
+![](assets/02-data-types.png)  
+
 
 
 
