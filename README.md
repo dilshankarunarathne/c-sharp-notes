@@ -177,19 +177,10 @@ catch (Exception)
 
 # Classes 
 
-Classes are building blocks of our applications. A class combines related variables (also called
-fields, attributes or properties) and functions (methods) together.
-Note: fields and properties are technically different in C# but conceptually they mean the same
-thing. They represent attributes about a class. I’ll explain the difference between fields and
-properties in detail in my C# Intermediate course.
-An object is an instance of a class. At runtime, many objects collaborate with each other to
-provide some functionality. As a metaphor, think of a supermarket. At a supermarket, there are
-multiple people working together to provide services to customers. Each person has a role and is
-focused only on one area of functionality. Software is exactly the same. A role in a supermarket
-is like a class in a C# application. A person filling that role during work hours, is like an object in
-an application at runtime.
-Note that even though there is a slight different between the word Class and Object, these words
-are often used interchangeably.
+Classes are building blocks of our applications. A class combines related variables (also called fields, attributes or properties) and functions (methods) together.  
+Note: fields and properties are technically different in C# but conceptually they mean the same thing. They represent attributes about a class.  
+An object is an instance of a class. At runtime, many objects collaborate with each other to provide some functionality. 
+Note that even though there is a slight different between the word Class and Object, these words are often used interchangeably.  
 To create a class:
 public class Person
 {
