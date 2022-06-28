@@ -132,20 +132,16 @@ We can declare constant values using `const` keyword. This keyword comes before 
 
 ## Type Conversion 
 
-There are times that you need to temporarily convert the value of a variable to a different type.
-Note that this conversion does not impact the original variable since C# is a statically-typed
-language, which in simple term means: once you declare the type of a variable, you cannot
-change it. But you may need to convert the "value" of a variable as part of assigning that value to
-a variable of a different type.
-There are a few conversion scenarios:
-If types are compatible (e.g. integral numbers and real numbers) and the target type is bigger,
-you don't need to do anything. The value will be automatically converted by the runtime and
-stored in the target type.
+There are times that you need to temporarily convert the value of a variable to a different type. Note that this conversion does not impact the original variable since C# is a statically-typed language, which in simple term means: once you declare the type of a variable, you cannot change it. But you may need to convert the "value" of a variable as part of assigning that value to a variable of a different type.  
+
+There are a few conversion scenarios: 
+* If types are compatible (e.g. integral numbers and real numbers) and the target type is bigger, you don't need to do anything. The value will be automatically converted by the runtime and stored in the target type.
+```cs
 byte b = 1;
 int i = b;
-Here because b is a byte and takes only 1 byte of memory, we can easily convert it to an int,
-which takes 4 bytes. So we don't need to do anything.
-If the target type, however, is smaller than the source type, the compiler will generate an error.
+```
+Here because b is a byte and takes only 1 byte of memory, we can easily convert it to an int, which takes 4 bytes. So we don't need to do anything. 
+* If the target type, however, is smaller than the source type, the compiler will generate an error.
 The reason for that is that overflow may happen as part of the conversion. For example, if you
 have an int with the value 1000, you cannot store it in a byte because the max value a byte can
 store is 255. In this case, some of the bits will be lost in memory. And that's the reason compiler warns you about these scenarios. If you're sure that no bits will be lost as part of the conversion,
