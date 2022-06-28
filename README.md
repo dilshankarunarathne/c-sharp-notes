@@ -31,9 +31,11 @@ public class Program
 }
 ```
 
-# Visual Studio IDE 
+# The Visual Studio IDE 
 
 VS is highly recommended for C# developing.  
+
+![](assets/01-vs-ide.png)  
 
 In its solution explorer, You will be able to see `AssemblyInfo.cs` file. It contains all the information for an assembly that can be created with your project. If you ever think of distributing an assembly, you should probably fill all the details in there.  
 
