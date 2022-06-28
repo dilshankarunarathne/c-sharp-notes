@@ -208,13 +208,9 @@ We use the new operator to allocate memory to an object. In C# you don’t have 
 
 ## The Static Modifier 
 
-When applied to a class member (field or method), makes that member accessible only via the class, not any objects. 
+When applied to a class member (field or method), makes that member accessible only via the class, not any objects.  
+We use static members in situations where we want only one instance of that member to exist in memory. As an example, the Main method in every program is declared as static, because we need only one entry point to the application.  
+In the real-world, it’s best to stay away from static as much as you can because that makes writing automated tests for applications hard. 
 
-We use static members in situations where we want only one instance of that member to exist in
-memory. As an example, the Main method in every program is declared as static, because we
-need only one entry point to the application.
-In the real-world, it’s best to stay away from static as much as you can because that makes
-writing automated tests for applications hard. Automated testing is the topic for another course,
-but for now, just remember how to use members that are already declared as static, and prefer
-not to declare your own class members as static.
+
 
