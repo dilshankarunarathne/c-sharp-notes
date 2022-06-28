@@ -208,10 +208,8 @@ We use the new operator to allocate memory to an object. In C# you don’t have 
 
 ## The Static Modifier 
 
-When applied to a class member (field or method), makes that member accessible only via the
-class, not any objects. So in the earlier example, if the Introduce method was static, we could
-access it via the Person class:
-Person.Introduce();
+When applied to a class member (field or method), makes that member accessible only via the class, not any objects. 
+
 We use static members in situations where we want only one instance of that member to exist in
 memory. As an example, the Main method in every program is declared as static, because we
 need only one entry point to the application.
