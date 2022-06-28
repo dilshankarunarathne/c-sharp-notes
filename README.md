@@ -29,44 +29,44 @@ In its solution explorer, You will be able to see `AssemblyInfo.cs` file. It con
 
 <details>
   <summary>`AssemblyInfo.cs`</summary>
-```cs
-using System.Reflection;
-using System.Runtime.CompilerServices;
-using System.Runtime.InteropServices;
+	```cs
+	using System.Reflection;
+	using System.Runtime.CompilerServices;
+	using System.Runtime.InteropServices;
 
-// General Information about an assembly is controlled through the following
-// set of attributes. Change these attribute values to modify the information
-// associated with an assembly.
-[assembly: AssemblyTitle("MyApplication")]
-[assembly: AssemblyDescription("")]
-[assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("MyApplication")]
-[assembly: AssemblyCopyright("Copyright ©  2022")]
-[assembly: AssemblyTrademark("")]
-[assembly: AssemblyCulture("")]
+	// General Information about an assembly is controlled through the following
+	// set of attributes. Change these attribute values to modify the information
+	// associated with an assembly.
+	[assembly: AssemblyTitle("MyApplication")]
+	[assembly: AssemblyDescription("")]
+	[assembly: AssemblyConfiguration("")]
+	[assembly: AssemblyCompany("")]
+	[assembly: AssemblyProduct("MyApplication")]
+	[assembly: AssemblyCopyright("Copyright ©  2022")]
+	[assembly: AssemblyTrademark("")]
+	[assembly: AssemblyCulture("")]
 
-// Setting ComVisible to false makes the types in this assembly not visible
-// to COM components.  If you need to access a type in this assembly from
-// COM, set the ComVisible attribute to true on that type.
-[assembly: ComVisible(false)]
+	// Setting ComVisible to false makes the types in this assembly not visible
+	// to COM components.  If you need to access a type in this assembly from
+	// COM, set the ComVisible attribute to true on that type.
+	[assembly: ComVisible(false)]
 
-// The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("69cc4d47-fe93-4767-8131-cc5fe73a4a50")]
+	// The following GUID is for the ID of the typelib if this project is exposed to COM
+	[assembly: Guid("69cc4d47-fe93-4767-8131-cc5fe73a4a50")]
 
-// Version information for an assembly consists of the following four values:
-//
-//      Major Version
-//      Minor Version
-//      Build Number
-//      Revision
-//
-// You can specify all the values or you can default the Build and Revision Numbers
-// by using the '*' as shown below:
-// [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("1.0.0.0")]
-[assembly: AssemblyFileVersion("1.0.0.0")]
-```
+	// Version information for an assembly consists of the following four values:
+	//
+	//      Major Version
+	//      Minor Version
+	//      Build Number
+	//      Revision
+	//
+	// You can specify all the values or you can default the Build and Revision Numbers
+	// by using the '*' as shown below:
+	// [assembly: AssemblyVersion("1.0.*")]
+	[assembly: AssemblyVersion("1.0.0.0")]
+	[assembly: AssemblyFileVersion("1.0.0.0")]
+	```
 </details>
 
 All these attributes are for assembly identification or assembly manifest. 
