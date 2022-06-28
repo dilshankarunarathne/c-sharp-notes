@@ -84,3 +84,7 @@ Under references tab, you will be able to see any assemblies that the project is
 
 There will be an `App.config` XML file where the application's configurations will be saved. Sometimes, you might want to save connection strings to a database or you might want to save some settings for the application. All that should be end up here.  
 
+# Basic C# 
+
+
+
