@@ -77,6 +77,8 @@ Under references tab, you will be able to see any assemblies that the project is
 
 There will be an `App.config` XML file where the application's configurations will be saved. Sometimes, you might want to save connection strings to a database or you might want to save some settings for the application. All that should be end up here.  
 
+There is also an **Object Browser** in VS. 
+
 # Basic C# 
 
 We write classes for our application in some namespace. If we want to use classes from other namespaces in our application - we can use the `using` keyword to refer to them. 
@@ -119,5 +121,5 @@ checked
 
 <br /> 
 
-There is a `var` keyword in C#. Instead of explicitly specifying the data type, we can use this. 
+There is a `var` keyword in C#. Instead of explicitly specifying the data type, we can use this keyword. 
 
