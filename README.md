@@ -287,7 +287,8 @@ The only difference is that if you use the `String` type, you need to import the
 using System;
 ```
 
-Escape Characters
+### Escape Characters 
+
 There are few special characters in C# called escape characters:
 <pre>
 \n New line
@@ -296,16 +297,19 @@ There are few special characters in C# called escape characters:
 \’ The ‘ (single quote) character
 \" The “ (double quote) character
 </pre>
-So if you want to have a new line in your string, you use \n.
-Since the backslash character is used to prefix escape characters, if you want to use the
-backslash character itself in your string (eg path to a folder), you need to prefix it with
-another backslash:
+So if you want to have a new line in your string, you use \n.  
+Since the backslash character is used to prefix escape characters, if you want to use the backslash character itself in your string (eg path to a folder), you need to prefix it with another backslash:
+```cs
 string path = “c:\\folder\\file.txt”;
-Verbatim Strings
-Sometimes if there are many escape characters in a string, that string becomes hard to
-read and understand.
-var message = “Hi John\nLook at the following path:c:\\folder1\
-\folder2”;
+```
+
+### Verbatim Strings 
+
+Sometimes if there are many escape characters in a string, that string becomes hard to read and understand.
+```cs
+var message = “Hi John\nLook at the following path:c:\\folder1\\folder2”; 
+```
+
 Note the \n and double backslashes (\\) here. We can re-write this string using a
 verbatim string. We simply prefix our string with an @ sign, and get rid of escape
 characters:
