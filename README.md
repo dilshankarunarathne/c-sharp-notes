@@ -319,19 +319,19 @@ c:\folder1\folder2”;
 
 # Reference Types and Value Types 
 
-In C#, we have two main types from which we can create new types: classes and structures (structs).
-
+In C#, we have two main types from which we can create new types: classes and structures (structs).  
 Classes are Reference Types while structures are Value Types.
 
 ## Value Types 
 
-When you copy a value type to another variable, a copy of the value stored in the
-source variable is taken and stored in the target variable. Hence, these two variables
-will be independent.
+When you copy a value type to another variable, a copy of the value stored in the source variable is taken and stored in the target variable. Hence, these two variables will be independent.
+```cs
 var i = 10;
 var j = i;
 j++;
-Here, incrementing j does not impact i.
+```
+Here, incrementing j does not impact i. 
+
 In practical terms, it means: if you pass an argument to a method and that argument is
 a value type, its value will be copied. So any modifications made to that argument in the
 method will be lost upon returning from that method.
