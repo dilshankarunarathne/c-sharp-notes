@@ -17,6 +17,5 @@ A class is a container that can hold some data - which is also called attributes
 These functions//methods add behavior by execution//doing-things for us.  
 Data represents the state of the application.  
 
-As the number of classes in our application grows, we need a way to organize these classes. That's why we need **namespaces**.  
-
+As the number of classes in our application grows, we need a way to organize these classes. That's why we need **namespaces**. A namespace is a container for related classes. 
 
