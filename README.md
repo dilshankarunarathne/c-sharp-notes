@@ -186,7 +186,7 @@ To create a class:
 public class Person
 {
 	public string Name;
-	
+
 	public void Introduce()
 	{
 		Console.WriteLine(“My name is “ + Name);
@@ -214,6 +214,7 @@ We use static members in situations where we want only one instance of that memb
 In the real-world, it’s best to stay away from static as much as you can because that makes writing automated tests for applications hard. 
 
 # Structs 
+
 A struct (structure) is a type similar to a class. It combines related fields and methods together.
 ```cs
 public struct RgbColor
