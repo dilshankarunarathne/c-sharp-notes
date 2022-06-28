@@ -332,13 +332,12 @@ j++;
 ```
 Here, incrementing j does not impact i. 
 
-In practical terms, it means: if you pass an argument to a method and that argument is
-a value type, its value will be copied. So any modifications made to that argument in the
-method will be lost upon returning from that method.
-Remember: Primitive types are structures so they are value types. Any custom structure
-you define will also be a value type.
+In practical terms, it means: if you pass an argument to a method and that argument is a value type, its value will be copied. So any modifications made to that argument in the method will be lost upon returning from that method.  
 
-Reference Types
+Remember: Primitive types are structures so they are value types. Any custom structure you define will also be a value type. 
+
+## Reference Types 
+
 With a reference type, however, the reference (or memory address) of the object is
 copied to the target variable. This means: if you copy a reference type to another
 variable, any changes you make to the object referenced by either of these variables,
