@@ -234,12 +234,15 @@ An array is a data structure that is used to store a collection of variables of 
 int[] numbers = new int[3];
 ```
 
-An array in C# is actually an instance of the Array class. So, that’s why here we have to use the
-new operator to allocate memory to this object.
-Here, the number 3 specifies the size of the array. Once an array is created, its size cannot be
-changed. If you need a list with dynamic size, you need to use the List class (explained later in
-the course).
+An array in C# is actually an instance of the Array class. So, that’s why here we have to use the new operator to allocate memory to this object.  
+Here, the number 3 specifies the size of the array. Once an array is created, its size cannot be changed. If you need a list with dynamic size, you need to use the List class.  
 To access elements in an array, we use the square bracket notation:
+```cs
 numbers[0] = 1;
+```
+
 Note that in C# arrays are zero-indexed. So the first element has index 0.
+
+
+
 
