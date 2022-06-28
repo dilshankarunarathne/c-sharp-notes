@@ -98,3 +98,8 @@ namespace MyApplication
 
 The class `Console` can be used to read data from the console or to write data to it. 
 
+# Variables & Data Types 
+
+
+
+
