@@ -29,7 +29,7 @@ In its solution explorer, You will be able to see `AssemblyInfo.cs` file. It con
 
 <details>
 <summary><code>AssemblyInfo.cs</code></summary>
-<code>
+<code class="language-c">
 using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
