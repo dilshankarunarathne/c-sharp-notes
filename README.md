@@ -12,8 +12,7 @@ The .NET framework consists of two main components.
 
 # Application Architecture 
 
-At very high level, the architecture of a C# application consists of classes.  
-A class is a container that can hold some data - which is also called attributes, and functions which is also called methods.  
+At very high level, the architecture of a C# application consists of classes. A class is a container that can hold some data - which is also called attributes, and functions which is also called methods.  
 These functions/methods add behavior by execution/doing-things for us.  
 Data represents the state of the application.  
 
