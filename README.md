@@ -272,10 +272,10 @@ string list = string.Join(“,”, numbers);
 
 <br />
 
-C# strings are immutable, which means once you create them, you cannot change their value or
-any of their characters. The String class has a few methods for modifying strings, but all these
-methods return a new string and do not modify the original string.
-String vs string
+C# strings are immutable, which means once you create them, you cannot change their value or any of their characters. The String class has a few methods for modifying strings, but all these methods return a new string and do not modify the original string. 
+
+### String vs string 
+
 Remember, all types in C# map to a type in .NET Framework. So, the “string” type in C# (all
 lowercase), maps to the String class in .NET, which means we can declare a string in either of
 the following ways:
