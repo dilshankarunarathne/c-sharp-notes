@@ -102,6 +102,9 @@ The class `Console` can be used to read data from the console or to write data t
 
 ![](assets/02-data-types.png)  
 
-Each C# types maps to their corresponding .Net types. When we compile our application, the compiler will convert our C# types into their equivalent .NET types. 
+Each C# types maps to their corresponding .Net types. When we compile our application, the compiler will convert our C# types into their equivalent .NET types.  
+
+Double is the default floating point data type in C#. If we want a float or a decimal, we need to explicitly tell the compiler that by post-fixing the value with `f` or `m`.  
+
 
 
