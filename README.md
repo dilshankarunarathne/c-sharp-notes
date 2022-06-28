@@ -74,7 +74,8 @@ There will be an `App.config` XML file where the application's configurations wi
 
 # Basic C# 
 
-We write classes for our application in some namespace. If we want to use classes from other namespaces in our application - we can use the `using` keyword to refer to them.  
+We write classes for our application in some namespace. If we want to use classes from other namespaces in our application - we can use the `using` keyword to refer to them. 
+
 ```cs
 using System;
 
