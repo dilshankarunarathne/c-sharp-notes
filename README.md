@@ -123,3 +123,7 @@ checked
 
 There is a `var` keyword in C#. Instead of explicitly specifying the data type, we can use this keyword. 
 
+We can use **format strings** in C# for easier console outputs. 
+```cs
+
+```
