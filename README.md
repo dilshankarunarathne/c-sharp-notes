@@ -204,5 +204,7 @@ A cleaner way of writing the same code is:
 var person = new Person();
 ```
 
+We use the new operator to allocate memory to an object. In C# you don’t have to worry about de-allocating the memory. CLR has a component called Garbage Collector, which automatically removes unused objects from memory. 
+
 
 
