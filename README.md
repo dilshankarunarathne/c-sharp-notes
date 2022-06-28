@@ -243,6 +243,59 @@ numbers[0] = 1;
 
 Note that in C# arrays are zero-indexed. So the first element has index 0.
 
+# Strings 
+A string is a sequence of characters. In C# a string is surrounded by double quotes, whereas a
+character is surrounded by a single quote.
+string name = “Mosh”;
+char ch = ‘A’;
+There are a few different ways to create a string:
+Using a string literal:
+string firstName = “Mosh”;
+Using concatenation: useful if you wanna combine two or more strings.
+string name = firstName + “ “ + lastName;
+Using string.Format: cleaner than concatenating multiple strings since you can see the output.
+string name = string.Format(“{0} {1}”, firstName, lastName);
+Using string.Join: useful when you have an array and would like to join all elements of that
+array with a character:
+var numbers = new int[3] { 1, 2, 3 }
+string list = string.Join(“,”, numbers);
+C# strings are immutable, which means once you create them, you cannot change their value or
+any of their characters. The String class has a few methods for modifying strings, but all these
+methods return a new string and do not modify the original string.
+String vs string
+Remember, all types in C# map to a type in .NET Framework. So, the “string” type in C# (all
+lowercase), maps to the String class in .NET, which means we can declare a string in either of
+the following ways:
+string name;
+String name;
+The only difference is that if you use the String type, you need to import the System namespace
+on top of the file, because that’s where the String class is defined.
+using System;
 
+Escape Characters
+There are few special characters in C# called escape characters:
+<pre>
+\n New line
+\t Tab
+\\ The \ character itself
+\’ The ‘ (single quote) character
+\" The “ (double quote) character
+</pre>
+So if you want to have a new line in your string, you use \n.
+Since the backslash character is used to prefix escape characters, if you want to use the
+backslash character itself in your string (eg path to a folder), you need to prefix it with
+another backslash:
+string path = “c:\\folder\\file.txt”;
+Verbatim Strings
+Sometimes if there are many escape characters in a string, that string becomes hard to
+read and understand.
+var message = “Hi John\nLook at the following path:c:\\folder1\
+\folder2”;
+Note the \n and double backslashes (\\) here. We can re-write this string using a
+verbatim string. We simply prefix our string with an @ sign, and get rid of escape
+characters:
+var message = @“Hi John
+Look at the following path:
+c:\folder1\folder2”;
 
 
