@@ -154,7 +154,8 @@ string s = “1234”;
 int i = Convert.ToInt32(s);
 ```
 
-**Convert** class has a number of methods for converting values to various types.
+**Convert** class has a number of methods for converting values to various types. `ToByte()`, `ToInt16()`, `ToInt32()`,`ToInt64()`.  
+All primitive types have `Parse()` methods. 
 ```cs
 string s = "1";
 int i = Convert.ToInt32(s);
