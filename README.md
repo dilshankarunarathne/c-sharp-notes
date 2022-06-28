@@ -127,3 +127,6 @@ We can use **format strings** in C# for easier console outputs.
 ```cs
 Console.WriteLine("Byte Min:{0} and Max:{1}", byte.MinValue, byte.MaxValue);
 ```
+
+
+
