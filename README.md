@@ -102,6 +102,6 @@ The class `Console` can be used to read data from the console or to write data t
 
 ![](assets/02-data-types.png)  
 
-
+Each C# types maps to their corresponding .Net types. 
 
 
