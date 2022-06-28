@@ -229,10 +229,11 @@ In .NET, all primitive types are declared as a structure. They are small and lig
 
 # Arrays 
 
-An array is a data structure that is used to store a collection of variables of the same type.
-For example, instead of declaring three int variables (that are related), we can create an int array
-like this:
+An array is a data structure that is used to store a collection of variables of the same type. For example, instead of declaring three int variables (that are related), we can create an int array like this:
+```cs
 int[] numbers = new int[3];
+```
+
 An array in C# is actually an instance of the Array class. So, that’s why here we have to use the
 new operator to allocate memory to this object.
 Here, the number 3 specifies the size of the array. Once an array is created, its size cannot be
