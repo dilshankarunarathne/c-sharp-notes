@@ -227,5 +227,18 @@ public struct RgbColor
 Use structs only when creating small lightweight objects. That is for a subtle performance optimization. In the real-world, 99% of the time, you create new types using classes, not structures.  
 In .NET, all primitive types are declared as a structure. They are small and lightweight. The biggest primitive type doesn’t take more than 16 bytes. 
 
+# Arrays 
 
+An array is a data structure that is used to store a collection of variables of the same type.
+For example, instead of declaring three int variables (that are related), we can create an int array
+like this:
+int[] numbers = new int[3];
+An array in C# is actually an instance of the Array class. So, that’s why here we have to use the
+new operator to allocate memory to this object.
+Here, the number 3 specifies the size of the array. Once an array is created, its size cannot be
+changed. If you need a list with dynamic size, you need to use the List class (explained later in
+the course).
+To access elements in an array, we use the square bracket notation:
+numbers[0] = 1;
+Note that in C# arrays are zero-indexed. So the first element has index 0.
 
