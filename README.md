@@ -132,7 +132,7 @@ We can declare constant values using `const` keyword. This keyword comes before 
 
 ## Type Conversion 
 
-There are times that you need to temporarily convert the value of a variable to a different type. Note that this conversion does not impact the original variable since C# is a statically-typed language, which in simple term means: once you declare the type of a variable, you cannot change it. But you may need to convert the "value" of a variable as part of assigning that value to a variable of a different type.  
+There are times that you need to temporarily convert the value of a variable to a different type. Note that this conversion does not impact the original variable since C# is a statically-typed language, which in simple term means: *once you declare the type of a variable, you cannot change it*. But you may need to convert the "value" of a variable as part of assigning that value to a variable of a different type.  
 
 There are a few conversion scenarios: 
 * If types are compatible (e.g. integral numbers and real numbers) and the target type is bigger, you don't need to do anything. The value will be automatically converted by the runtime and stored in the target type.
