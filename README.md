@@ -310,11 +310,11 @@ Sometimes if there are many escape characters in a string, that string becomes h
 var message = “Hi John\nLook at the following path:c:\\folder1\\folder2”; 
 ```
 
-Note the \n and double backslashes (\\) here. We can re-write this string using a
-verbatim string. We simply prefix our string with an @ sign, and get rid of escape
-characters:
+Note the \n and double backslashes (\\) here. We can re-write this string using a verbatim string. We simply prefix our string with an @ sign, and get rid of escape characters:
+```cs
 var message = @“Hi John
 Look at the following path:
 c:\folder1\folder2”;
+```
 
 
