@@ -106,8 +106,15 @@ Each C# types maps to their corresponding .Net types. When we compile our applic
 
 Double is the default floating point data type in C#. If we want a float or a decimal, we need to explicitly tell the compiler that by post-fixing the value with `f` or `m`.  
 
-C# don't have overflow checking. If we increment a number out of its type range, it will overflow. For example, if we increment a `byte` variable's value from 255 to 255+1, it's final value would be set to 0.  
-If we don't want overflowing to happen, we need to use the `checked` keyword and enclose our operation within a block.  
+C# don't have overflow checking. If we increment a number out of its type range at runtime, it will overflow. For example, if we increment a `byte` variable's value from 255 to 255+1, it's final value would be set to 0.  
+If we don't want overflowing to happen, we need to use the `checked` keyword and enclose our operation within a block. In that case, the value will not overflow, instead it will throw an exception. 
 
+```cs
+checked 
+{
+	byte number = 255;
+	number = number + 1;
+}
+```
 
 
