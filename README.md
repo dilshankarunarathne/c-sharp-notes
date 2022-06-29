@@ -976,9 +976,9 @@ public class Car : Vehicle
 ```cs
 public class DbMigrator
 {
-// We re-use the code in the logger class without
-// the need to repeat that logic here in DbMigrator
-private Logger _logger;
+	// We re-use the code in the logger class without
+	// the need to repeat that logic here in DbMigrator
+	private Logger _logger;
 }
 ```
 
