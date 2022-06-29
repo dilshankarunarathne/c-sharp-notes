@@ -855,17 +855,22 @@ Weirdo(ref a);
 ``` 
 <br />
 
-The `out` modifier can be used to return multiple values from a method. Any parameter
-declared with the out modifier is expected to receive a value at the end of the method.
-Again, this is a design smell and I’m totally against that. Don’t use it while declaring
-your methods.
+The `out` modifier can be used to return multiple values from a method. Any parameter declared with the out modifier is expected to receive a value at the end of the method. Again, this is a design smell and I’m totally against that. Don’t use it while declaring
+your methods. 
+
+```cs
 public void Weirdo(out int a)
 {
-a = 1;
+	a = 1;
 }
 …
 int a;
 Weirdo(out a);
+```
+
+
+
+
 
 
 
