@@ -560,7 +560,19 @@ Console.WriteLine("Minute: " + now.minute);
 ```
 
 DateTime objects in C# are immutable. They cannot be changed.  
+To modify them, we need to create a new object. And there are methods to modify. 
+```cs
+var now = DateTime.Now;
 
+var tomorrow = now.AddDays(1);
+var yesterday = now.AddDays(-1);
+
+Console.WriteLine(now.ToLongDateString());
+Console.WriteLine(now.ToShortDateString());
+Console.WriteLine(now.ToLongTimeString());
+Console.WriteLine(now.ToShortTimeString());
+Console.WriteLine(now.ToString("yyyy-MM-dd HH:mm:ss"));
+```
 
 
 ```cs
