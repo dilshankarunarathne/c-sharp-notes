@@ -614,11 +614,16 @@ var timeSpan1 = timeSpan.Add(TimeSpan.FromMinutes(2));
 var timeSpan2 = timeSpan.Subtract(TimeSpan.FromSeconds(3));
 ``` 
 
+<br />
+
 They can be converted to strings using the `ToString()` method and from strings to TimeSpan objects using the `Parse()` method. 
 ```cs
 var timeSpan = TimeSpan.FromHours(1);
 Console.WriteLine(timeSpan.ToString());	// don't have to include the `ToString()` method in the code - implicit conversion
 
+var timeSpan1 = TimeSpan.Parse("1:2:3");
+Console.WriteLine(timeSpan1.ToString());
+```
 
 
 
