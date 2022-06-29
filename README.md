@@ -541,6 +541,9 @@ var numbers = new List<int>();
 var numbers = new List<int> { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
 ```
 
+There are methods such as `Add()`, `AddRange()`, `Remove()`, `RemoveAt()`, `IndexOf()`, `Contains()` and field named `count` in the **List** class.  
+
+
 
 
 
