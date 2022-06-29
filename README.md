@@ -1067,7 +1067,32 @@ object obj = 1;
 int i = (int)obj;
 ```
 
+# POLYMORPHISM 
 
+## Method Overriding 
+
+- Method overriding means changing the implementation of an inherited method.
+- If a declare a method as virtual in the base class, we can override it in a derived class. 
+
+```cs 
+public class Shape
+{
+	public virtual Draw()
+	{
+		// Default implementation for all derived classes
+	}
+}
+
+public class Circle : Shape
+{
+	public override Draw()
+	{
+		// Changed implementation
+	}
+} 
+```
+
+- This technique allows us to achieve polymorphism. Polymorphism is a great objectoriented technique that allows use get rid of long procedural switch statements (or conditionals).
 
 
 
