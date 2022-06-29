@@ -814,7 +814,7 @@ public class Customer
 
 Having too many `this()` calls considers bad practise because it is hard to understand what is happening. So, it is good practice to use the `this` keyword only when you need to call a constructor from another constructor. 
 
-# Methods 
+## Methods 
 
 Signature of a method consists of the number, type and order of its parameters. Overloading a method means having a method with the same name but with different signatures. This makes it easier for the callers of the method to choose the more suitable signature depending on the type of data they have to pass to the method. 
 
@@ -870,7 +870,7 @@ int a;
 Weirdo(out a);
 ```
 
-# Fields 
+## Fields 
 
 A field can be initialized in two ways: In a constructor, or directly upon declaration. The benefit of initialising a field during declaration is that if your class has one or more constructors, you’ll make sure that the field will always be initialised irrespective of which constructor is going to be called. 
 
@@ -891,7 +891,7 @@ public class Customer
 }
 ```
 
-# Access Modifiers 
+## Access Modifiers 
 
 In C# we have 5 access modifiers: public, private, protected, internal and protected internal. 
 A class member declared with public is accessible everywhere.  
@@ -901,7 +901,7 @@ We use access modifiers to hide the implementation details of a class. So anythi
 that is about “how” a class does its job should be declared as private. This way, we make sure other parts of the code will not touch the implementation detail of a class. And as a result we improve the robustness of our code. If change the implementation
 of a class, we only need to make changes inside the class. No other parts of the code will need to be changed. 
 
-# Properties 
+## Properties 
 
 A property is a kind of class member that is used for providing access to fields of a class.  
 As a best practice, we must declare fields as private and create public properties to provide access to them.  
@@ -930,7 +930,7 @@ public class Customer
 }
 ```
 
-# Indexers 
+## Indexers 
 
 Indexer is a special kind of property that allows accessing elements of a list by an index.  
 If a class has the semantics of a list, or collection, we can define an indexer property for it. This way it’s easier to get or set items in the collection. 
