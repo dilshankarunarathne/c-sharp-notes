@@ -747,7 +747,9 @@ There is also a `Path` class that is used to work with paths. It provides method
 `GetDirectoryName()` returns the name of the directory.  
 `GetExtension()` returns the extension of the file.  
 
-# Classes 
+# Object-Oriented Programming 
+
+## Classes 
 
 Classes are building blocks of software applications. A class encapsulates data (stored in fields) and behaviour (defined by methods).
 ```cs
@@ -771,7 +773,7 @@ Customer customer = new Customer();
 var customer = new Customer();
 ```
 
-# Constructors 
+## Constructors 
 
 A constructor is a method that is called when an instance of a class is created. We use constructors to put an object in an early state. 
 As a best practice, define a constructor only when an object “needs” to be initialised or it won’t be able to do its job.  
