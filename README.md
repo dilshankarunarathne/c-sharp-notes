@@ -534,7 +534,7 @@ In C#, all arrays map to the **Array** type defined in the System namespace of .
 
 # Lists 
 
-
+Lists in C# are similar to Arrays, but they have a dynamic size. 
 
 
 
