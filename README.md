@@ -546,7 +546,15 @@ There are methods such as `Add()`, `AddRange()`, `Remove()`, `RemoveAt()`, `Inde
 # Date-Time 
 
 There is a `DateTime` structure in the System namespace of .NET framework. It is a struct that represents a date and time.  
+There are a number of ways to create a DateTime object. 
+```cs
+var dateTime = new DateTime(2015, 1, 1);
 
+var now = DateTime.Now;
+var today = DateTime.Today;
+var utcNow = DateTime.UtcNow;
+var unixEpoch = DateTime.UnixEpoch;
+```
 
 
 
