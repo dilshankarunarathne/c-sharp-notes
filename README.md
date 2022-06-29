@@ -899,6 +899,9 @@ We use access modifiers to hide the implementation details of a class. So anythi
 that is about “how” a class does its job should be declared as private. This way, we make sure other parts of the code will not touch the implementation detail of a class. And as a result we improve the robustness of our code. If change the implementation
 of a class, we only need to make changes inside the class. No other parts of the code will need to be changed. 
 
+# Properties 
+
+A property is a kind of class member that is used for providing access to fields of a class.  
 
 
 
