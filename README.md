@@ -427,7 +427,10 @@ for (var i = 0; i < 10; i++)
 ```
 
 ```cs
-
+foreach (var item in collection)
+{
+	...
+}
 ```
 
 ```cs
