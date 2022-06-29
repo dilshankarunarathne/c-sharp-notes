@@ -554,6 +554,9 @@ var now = DateTime.Now;
 var today = DateTime.Today;
 var utcNow = DateTime.UtcNow;
 var unixEpoch = DateTime.UnixEpoch;
+
+Console.WriteLine("Hour: " + now.hour);
+Console.WriteLine("Minute: " + now.minute);
 ```
 
 
