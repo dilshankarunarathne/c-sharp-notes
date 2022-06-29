@@ -779,5 +779,24 @@ Constructors do not have a return type, not even void, and they should have the 
 
 Constructors can be overloaded. Overloading means creating a method with the same name and different signatures. Signature of a method consists of the number, type and order of its parameters. We can pass control from one constructor to the other by using the `this` keyword.
 
-
-
+```cs
+public class Customer
+{
+public int Id;
+public string Name;
+public List<Order> Orders;
+// Default or parameterless constructor
+public Customer()
+{
+// Orders has to be initialized here, otherwise it
+// will be a null reference. As a best practice,
+// anytime your class contains a list, always
+// initialize the list.
+Orders = new List<Order>();
+}
+public Customer(int id)
+: this() // Calls the default constructor
+{
+this.Id = id;
+}
+}
