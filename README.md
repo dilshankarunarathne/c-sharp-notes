@@ -987,17 +987,15 @@ private Logger _logger;
 ## Favour Composition over Inheritance 
 
 - Problems with inheritance:
-• Easily abused by amateur designers / developers
-• Leads to large complex hierarchies
-• Such hierarchies are very fragile and a change may affect many classes
-• Results in tight coupling
+  * Easily abused by amateur designers / developers
+  * Leads to large complex hierarchies
+  * Such hierarchies are very fragile and a change may affect many classes
+  * Results in tight coupling
 - Benefits of composition:
-• Flexible
-• Leads to loose coupling
-- Having said all that, it doesn’t mean inheritance should be avoided at all times. In fact,
-it’s great to use inheritance when dealing with very stable classes on top of small
-hierarchies. As the hierarchy grows (or variations of classes increase), the hierarchy,
-however, becomes fragile. And that’s where composition can give you a better design.
+  * Flexible
+  * Leads to loose coupling
+
+Having said all that, it doesn’t mean inheritance should be avoided at all times. In fact, it’s great to use inheritance when dealing with very stable classes on top of small hierarchies. As the hierarchy grows (or variations of classes increase), the hierarchy, however, becomes fragile. And that’s where composition can give you a better design.
 
 
 
