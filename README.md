@@ -532,6 +532,8 @@ There are two types of multi dimentional arrays in C#.
 
 In C#, all arrays map to the **Array** type defined in the System namespace of .NET framework. This Array class has a property called `Length` and methods such as `Clear()`, `Copy()`, `IndexOf()`, `LastIndexOf()`, `Reverse()`, `Sort()`, `ToString()`, `Trim()`, `TrimEnd()`, `TrimStart()` and `ToArray()`.  
 
+# Lists 
+
 
 
 
