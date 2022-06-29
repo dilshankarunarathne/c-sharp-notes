@@ -629,22 +629,16 @@ Console.WriteLine(timeSpan1.ToString());
 
 String is an immutable class in the .NET framework. It is a class that represents a string of characters. 
 
+## Formatting 
+
+ToLower() and ToUpper() methods can be used to convert a string to lowercase or uppercase. There is also a `ToTitleCase()` method that converts a string to title case.  
+There is also a `Trim()` method that removes leading and trailing whitespace from a string. There is also a `TrimStart()` and `TrimEnd()` methods that removes leading and trailing whitespace from a string.  
+
+## Searching 
 
 
 
 
-```cs
-
-```
-
-
-```cs
-
-```
 
 
 
-
-```cs
-
-```
