@@ -702,5 +702,8 @@ stringBuilder.AppendLine();
 stringBuilder.AppendLine("This is a new line");
 stringBuilder.AppendLine("This is another new line");
 
+stringBuilder.Insert(0, "This is a new string"); 
+stringBuilder.Remove(0, 10);
+stringBuilder.Replace("World", "Universe");
 
 
