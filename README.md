@@ -1188,17 +1188,13 @@ public class OrderProcessor
 
 ## Interfaces and Extensibility 
 
-- We can use interfaces to change our application’s behaviour by “extending” its code
-(rather than changing the existing code).
-- If a class is dependent on an interface, we can supply a different implementation of
-that interface at runtime. This way, the behaviour of the application changes without
-any impact on that class.
-- For example, let’s assume our DbMigrator class is dependent on an ILogger
-interface. At runtime, we can supply a ConsoleLogger to log the messages on the
-console. Later, we may decide to log the messages in a file (or a database). We can
-simply create a new class that implements the ILogger interface and inject it into
-DbMigrator.
-Interfaces and Inheritance
+- We can use interfaces to change our application’s behaviour by “extending” its code (rather than changing the existing code).
+- If a class is dependent on an interface, we can supply a different implementation of that interface at runtime. This way, the behaviour of the application changes without any impact on that class.
+- For example, let’s assume our DbMigrator class is dependent on an ILogger interface. At runtime, we can supply a ConsoleLogger to log the messages on the console. Later, we may decide to log the messages in a file (or a database). We can simply create a new class that implements the ILogger interface and inject it into DbMigrator. 
+
+## Interfaces and Inheritance 
+
+
 - One of the common misconceptions about interfaces is that they are used to
 implement multiple inheritance in C#. This is fundamentally wrong, yet many books
 and videos make such a false claim.
