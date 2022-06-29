@@ -7,11 +7,18 @@ namespace CSharpFundementals
         static void Main(string[] args) 
         {
             var random = new Random();
-            for (int i = 0; i < 10; i++)
+            
+            const int passwordLength = 10;
+
+            var buffer = new char[passwordLength];
+            for (int i = 0; i < passwordLength; i++)
             {
-                var number = random.Next(1, 100);
-                Console.WriteLine(number);
+                buffer[i] = (char) ('a' + random.Next(0, 26));
             }
+
+            var password = new string(buffer);
+
+            Console.WriteLine(password);
         }
     }
 }
