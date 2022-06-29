@@ -1034,18 +1034,19 @@ Shape shape = circle;
 ```cs
 Circle circle = (Circle)shape;
 ```
-- Casting can throw an exception if the conversion is not successful. We can use the as keyword to prevent this. If conversion is not successful, null is returned. 
+- Casting can throw an exception if the conversion is not successful. We can use the `as` keyword to prevent this. If conversion is not successful, null is returned. 
 ```cs
 Circle circle = shape as Circle;
 if (circle != null) …
 ```
-- We can also use the is keyword:
+- We can also use the `is` keyword: 
+```cs
 if (shape is Circle)
 {
-var circle = (Circle) shape;
-…
+	var circle = (Circle) shape;
+	…
 }
-
+```
 
 
 
