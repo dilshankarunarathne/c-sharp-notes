@@ -578,7 +578,7 @@ Console.WriteLine(now.ToString("yyyy-MM-dd HH:mm:ss"));
 We can specify the format of the string using the `ToString()` method.  
 
 There is also a type called `TimeSpan` that represents a duration of time. There are a few different ways to create a TimeSpan object.  
-The simplest way is to use the `new` operator. 
+The simplest way is to use the `new` operator. One of the overloaded constructors takes a number of hours, minutes and seconds as arguments. 
 ```cs
 var timeSpan = new TimeSpan(1, 2, 3);
 ```
