@@ -535,6 +535,10 @@ In C#, all arrays map to the **Array** type defined in the System namespace of .
 # Lists 
 
 Lists in C# are similar to Arrays, but they have a dynamic size. 
+```cs
+var numbers = new List<int>();
+var numbers = new List<int> { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+```
 
 
 
