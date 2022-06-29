@@ -902,8 +902,31 @@ of a class, we only need to make changes inside the class. No other parts of the
 # Properties 
 
 A property is a kind of class member that is used for providing access to fields of a class.  
+As a best practice, we must declare fields as private and create public properties to provide access to them.  
+A property encapsulates a get and a set method: 
 
+```cs
+public class Customer
+{
+	private string _name;
+	public string Name
 
+	{
+		get { return _name; }
+		set { _name = value; }
+	}
+}
+```
+
+Inside the get/set methods we can have some logic.  
+If you don’t need to write any specific logic in the get or set method, it’s more efficient to create an auto-implemented property. An auto-implemented property encapsulates a private field behind the scene. So you don’t need to manually create one. The compiler creates one for you: 
+
+```cs
+public class Customer
+{
+	public string Name { get; set; }
+}
+```
 
 
 
