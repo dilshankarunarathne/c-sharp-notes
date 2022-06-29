@@ -671,5 +671,24 @@ Or we can format the number using the `ToString()` method. It takes a format str
 var number = 123.45;
 Console.WriteLine(number.ToString());	// 123.45
 Console.WriteLine(number.ToString("C"));	// $123.45
+Console.WriteLine(number.ToString("C0"));	// $123
 ```
+
+* c or C -> Currency 
+* d or D -> Decimal 
+* e or E -> Exponential
+* f or F -> Fixed-point 
+* g or G -> General 
+* n or N -> Number 
+* p or P -> Percent 
+* r or R -> Round-trip 
+* s or S -> String 
+* t or T -> Hexadecimal
+* x or X -> Hexadecimal 
+* y or Y -> Yes/No 
+* z or Z -> Zero-filled 
+
+
+
+
 
