@@ -607,7 +607,7 @@ TimeSpan objects has properties such as `TotalHours`, `TotalMinutes`, `TotalSeco
 Also it has properties such as `Hours`, `Minutes`, `Seconds` and `Milliseconds`.  
 For example, if you have a TimeSpan object with a duration of 1 hour, 2 minutes and 3 seconds, the `Minutes` property will return the value 2. That's the number of minutes we've added for the duration. But, if we query `TotalMinutes` property, it will return the value `62.05`.  
 
-Similar to DateTime objects, TimeSpan objects are immutable. They cannot be changed. 
+Similar to DateTime objects, TimeSpan objects are immutable. They cannot be changed. But they provide methods to modify their value `Add()` and `Subtract()`. Both of these methods return a new TimeSpan object.  
 
 
 
