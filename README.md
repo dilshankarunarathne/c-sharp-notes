@@ -995,6 +995,27 @@ public class DbMigrator
 
 Having said all that, it doesn’t mean inheritance should be avoided at all times. In fact, it’s great to use inheritance when dealing with very stable classes on top of small hierarchies. As the hierarchy grows (or variations of classes increase), the hierarchy, however, becomes fragile. And that’s where composition can give you a better design.
 
+# INHERITANCE 
 
+## Access Modifiers 
+
+- Your classes should be like a black box. They should have limited visibility from the
+outside. The implementation, the detail, should be hidden. We use access modifiers
+(mostly private) to achieve this. This is referred to as Information Hiding (and
+sometimes Encapsulation) in object-oriented programming.
+- Public: A member declared as public is accessible everywhere.
+- Private: A member declared as private is accessible only from the class.
+- Protected: A member declared as protected is accessibly only from the class and its
+derived classes. Protected breaks encapsulation (because the implementation details
+of a class will leak into its derived classes) and is better to be avoided.
+- Internal: A member declared as internal is accessibly only from the same assembly.
+- Protected Internal: A member declared as protected internal is accessible only from
+the same assembly or any derived classes. (Sounds weird? Forget it! It’s not really
+used.)
+Constructors and Inheritance
+- Constructors are not inherited and need to explicitly defined in derived class.
+- When creating an object of a type that is part of an inheritance hierarchy, base class
+constructors are always executed first.
+- We can use the base keyword to pass control to a base class constructor.
 
 
