@@ -605,6 +605,9 @@ There is yet another way to create a TimeSpan object. It is called `TimeSpan.Par
 
 TimeSpan objects has properties such as `TotalHours`, `TotalMinutes`, `TotalSeconds` and `TotalMilliseconds`.  
 Also it has properties such as `Hours`, `Minutes`, `Seconds` and `Milliseconds`.  
+For example, if you have a TimeSpan object with a duration of 1 hour, 2 minutes and 3 seconds, the `Minutes` property will return the value 2. That's the number of minutes we've added for the duration. But, if we query `TotalMinutes` property, it will return the value `62.05`.  
+
+
 
 
 
