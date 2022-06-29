@@ -1013,4 +1013,20 @@ Your classes should be like a black box. They should have limited visibility fro
 - When creating an object of a type that is part of an inheritance hierarchy, base class constructors are always executed first.
 - We can use the base keyword to pass control to a base class constructor.
 
+```cs 
+public class Car : Vehicle
+{
+	public Car(string registration) : base(registration)
+	{
+	}
+}
+``` 
+
+
+
+
+
+
+
+
 
