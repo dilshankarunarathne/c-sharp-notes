@@ -417,9 +417,26 @@ switch(role)
 }
 ```
 
+# Iteration Statements 
 
+```cs
+for (var i = 0; i < 10; i++)
+{
+	...
+}
+```
 
+```cs
 
+```
+
+```cs
+
+```
+
+```cs
+
+```
 
 
 ```cs
