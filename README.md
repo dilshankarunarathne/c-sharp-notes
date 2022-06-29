@@ -738,6 +738,8 @@ The `FileStream` class is used to read and write to a file.
 If we're going to have a small number of operations on a file, we can use the `FileInfo` class. If we're going to have a large number of operations on a file, we can use the `File` class.  
 Everytime we use these static methods, the systems runs a security check to see if the user has the appropriate permissions to perform the operation. So, if we are performing a large number of operations, this may have a performing impact on the system. In that case, we should use the instance methods - where the security check is only done during the time when the instance of the class is created.  
 
-The `Directory` and `DirectoryInfo` classes are used to work with directories. They provide methods for creating, copying, moving, deleting and opening directories. The `DirectoryInfo` class is used to get information about a directory and it provides **instance methods**. The `Directory` class provides static methods. 
+The `Directory` and `DirectoryInfo` classes are used to work with directories. They provide methods for creating, copying, moving, deleting and opening directories. The `DirectoryInfo` class is used to get information about a directory and it provides **instance methods**. The `Directory` class provides static methods.  
+
+There is also a `Path` class that is used to work with paths. It provides methods for parsing and combining paths. 
 
 
