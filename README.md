@@ -711,7 +711,16 @@ Console.WriteLine(stringBuilder.ToString());
 stringBuilder.Clear();
 ```
 
+Because all these methods return the string builder itself, we can chain them. For example, we can use the `AppendLine()` method to append a new line and then use the `Append()` method to append a string. 
 
+```cs
+var stringBuilder = new StringBuilder();
+stringBuilder.AppendLine("Hello")
+				.Append("World")
+				.AppendLine("This is another new line")
+				.Replace("World", "Universe");
+Console.WriteLine(stringBuilder.ToString());
+```
 
 
 
