@@ -665,5 +665,6 @@ To convert a string to a number, use the `Parse()` method. It takes a string as 
 
 There is also a ToInt32(), ToInt64(), ToDouble(), ToSingle(), ToDecimal() and ToBoolean() methods that can be used to convert a string to a number. If the string cannot be converted because it's null or empty or otherwise, the methods return `0`, whereas the `TryParse()` method returns `false` and `Parse()` method throws an exception. 
 
-To convert numbers to strings, use the `ToString()` method. It takes a number as an argument and returns a string. 
+To convert numbers to strings, use the `ToString()` method. It takes a number as an argument and returns a string. We can either call this without any arguments.  
+Or we can format the number using the `ToString()` method. It takes a format string as an argument and returns a string. 
 
