@@ -688,6 +688,9 @@ Console.WriteLine(number.ToString("C0"));	// $123
 * y or Y -> Yes/No 
 * z or Z -> Zero-filled 
 
+# StringBuilder 
+
+String is an immutable class in the .NET framework. So, if you are working with a lot of string manipulation, it is recommended to use the `StringBuilder` class.  
 
 
 
