@@ -645,6 +645,12 @@ If you want to search for a substring that may or may not be present in the stri
 
 To get a substring from a string, use the `Substring()` method. It takes two arguments: the starting index and the length of the substring.  
 If we do not provide the length of the substring, it will return the substring from the starting index to the end of the string.  
+## Replacing 
+
+To replace a substring in a string, use the `Replace()` method. It takes two arguments: the substring to replace and the string to replace it with. 
+
+## Null checking 
+
 
 
 
