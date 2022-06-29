@@ -659,3 +659,8 @@ To check if a string contains whitespace, use the `IsWhiteSpace()` method. It ta
 
 To split a string into an array of strings, use the `Split()` method. It takes a string as an argument and returns an array of strings. 
 
+## Converting strings to numbers 
+
+To convert a string to a number, use the `Parse()` method. It takes a string as an argument and returns a number. Also we can use the `TryParse()` method to check if the string can be converted to a number.  
+There is also a ToInt32(), ToInt64(), ToDouble(), ToSingle(), ToDecimal() and ToBoolean() methods that can be used to convert a string to a number. 
+
