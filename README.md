@@ -944,7 +944,28 @@ public class HttpCookie
 }
 ```
 
+# ASSOCIATION BETWEEN CLASSES 
 
+## Class Coupling 
+
+- A measure of how interconnected classes and subsystems are.
+- The more coupled classes, the harder it is to change them. A change in one class may
+affect many other classes.
+- Loosely coupled software, as opposed to tightly coupled software, is easier to change.
+- Two types of relationships between classes: Inheritance and Composition.
+Inheritance
+- A kind of relationship between two classes that allows one to inherit code from the
+other.
+- Referred to as Is-A relationship: A Car is a Vehicle
+- Benefits: code re-use and polymorphic behaviour.
+public class Car : Vehicle
+{
+}
+
+## Composition 
+
+- A kind of relationship that allows one class to contain another.
+- Referred to as Has-A relationship: A Car has an Engine
 
 
 
