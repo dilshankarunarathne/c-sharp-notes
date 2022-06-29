@@ -543,6 +543,9 @@ var numbers = new List<int> { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
 
 There are methods such as `Add()`, `AddRange()`, `Remove()`, `RemoveAt()`, `IndexOf()`, `Contains()` and field named `count` in the **List** class.  
 
+# Date-Time 
+
+There is a `DateTime` structure in the System namespace of .NET framework. It is a struct that represents a date and time.  
 
 
 
