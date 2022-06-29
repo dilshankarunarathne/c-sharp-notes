@@ -1135,26 +1135,28 @@ public sealed class String
 
 ## Introduction 
 
-- An interface is a language construct that is similar to a class (in terms of syntax) but is
-fundamentally different.
-- An interface is simply a declaration of the capabilities (or services) that a class should
-provide.
+- An interface is a language construct that is similar to a class (in terms of syntax) but is fundamentally different.
+- An interface is simply a declaration of the capabilities (or services) that a class should provide.
+
+```cs
 public interface ITaxCalculator
 {
-int Calculate();
+	int Calculate();
 }
-- This interface states a class that wants to play the role of a tax calculator, should
-provide a method called Calculate() that takes no parameters and returns an int. The
-implementation of this class might look like this:
+```
+
+- This interface states a class that wants to play the role of a tax calculator, should provide a method called Calculate() that takes no parameters and returns an int. The implementation of this class might look like this: 
+
+```cs
 public class TaxCalculator : ITaxCalculator
 {
 public void Calculate() { … }
 }
-- So an interface is purely a declaration. Members of an interface do not have
-implementation.
-- An interface can only declare methods and properties, but not fields (because fields
-are about implementation detail).
-- Members of an interface do not have access modifiers.
+```
+
+- So an interface is purely a declaration. Members of an interface do not have implementation.
+- An interface can only declare methods and properties, but not fields (because fields are about implementation detail).
+- Members of an interface do not have access modifiers. 
 
 
 
