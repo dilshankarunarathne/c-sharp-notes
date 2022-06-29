@@ -819,15 +819,19 @@ Signature of a method consists of the number, type and order of its parameters. 
 ```cs
 public class Point
 {
-public void Move(int x, int y) {}
-// The Move method overloaded here
-public void Move(Point newLocation) {}
+	public void Move(int x, int y) {}
+	// The Move method overloaded here
+	public void Move(Point newLocation) {}
 }
-- We can use the params modifier to give a method the ability to receive varying
-number of parameters.
+``` 
+<br />
+
+We can use the params modifier to give a method the ability to receive varying number of parameters.
+
+```cs
 public class Calculator
 {
-public int Add(params int[] numbers) {}
+	public int Add(params int[] numbers) {}
 }
 …
 var result = calculator.Add(1, 2, 3, 4);
