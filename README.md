@@ -559,6 +559,8 @@ Console.WriteLine("Hour: " + now.hour);
 Console.WriteLine("Minute: " + now.minute);
 ```
 
+DateTime objects in C# are immutable. They cannot be changed.  
+
 
 
 ```cs
