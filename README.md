@@ -747,6 +747,32 @@ There is also a `Path` class that is used to work with paths. It provides method
 `GetDirectoryName()` returns the name of the directory.  
 `GetExtension()` returns the extension of the file.  
 
+# Classes 
+
+Classes are building blocks of software applications. A class encapsulates data (stored in fields) and behaviour (defined by methods).
+```cs
+public class Customer
+{
+	// Field
+	public string Name;
+
+	// Method
+	public void Promote()
+	{
+		// Method body
+	}
+}
+``` 
+
+An object is an instance of a class. We can create an object using the new operator. 
+```cs
+Customer customer = new Customer();
+// Or
+var customer = new Customer();
+```
+
+
+
 
 
 
