@@ -797,8 +797,15 @@ public class Customer
 	}
 
 	public Customer(int id) 
+		: this() 
 	{
 		this.Id = id;
+	}
+
+	public Customer(int id, string name) 
+		: this(id)
+	{
+		this.Name = name;
 	}
 }
 ```
