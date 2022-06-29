@@ -729,6 +729,14 @@ A real world applications can have a quite of number of functionalities. If we p
 
 # Files and Directories 
 
-.NET has a namespace called `System.IO` that contains classes that can be used to work with files and directories. 
+.NET has a namespace called `System.IO` that contains classes that can be used to work with files and directories. There are many classes in this namespace.
+
+## File, FileInfo and FileStream 
+
+File and FileInfo classes are used to work with files. They provide methods for creating, copying, moving, deleting and opening files. The `FileInfo` class is used to get information about a file and it provides **instance methods**. The `File` class provides static methods.  
+The `FileStream` class is used to read and write to a file.  
+If we're going to have a small number of operations on a file, we can use the `FileInfo` class. If we're going to have a large number of operations on a file, we can use the `File` class.  
+Everytime we use these static methods, the systems runs a security check to see if the user has the appropriate permissions to perform the operation. So, if we are performing a large number of operations, this may have a performing impact on the system. In that case, we should use the instance methods - where the security check is only done during the time when the instance of the class is created.  
+
 
 
