@@ -1160,7 +1160,7 @@ public class TaxCalculator : ITaxCalculator
 - So an interface is purely a declaration. Members of an interface do not have implementation.
 - An interface can only declare methods and properties, but not fields (because fields are about implementation detail).
 - Members of an interface do not have access modifiers. 
-
+- Interfaces help building loosely coupled applications. We reduce the coupling between two classes by putting an interface between them. This way, if one of these classes changes, it will have no impact on the class that is dependent on that (as long as the interface is kept the same). 
 
 
 
