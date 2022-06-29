@@ -1100,21 +1100,23 @@ public class Circle : Shape
 - When a class member is declared as abstract, that class needs to be declared as abstract as well. That means that class is not complete.
 - In derived classes, we need to override the abstract members in the base class. 
 
-
+```cs
 public abstract class Shape
 {
-// This method doesn’t have a body.
-public abstract Draw();
+	// This method doesn’t have a body.
+	public abstract Draw();
 }
+
 public class Circle : Shape
 {
-public override Draw()
-{
-// Changed implementation
+	public override Draw()
+	{
+		// Changed implementation
+	}
 }
-}
-- In a derived class, we need to override all abstract members of the base class,
-otherwise that derived class is going to be abstract too.
+```
+
+- In a derived class, we need to override all abstract members of the base class, otherwise that derived class is going to be abstract too.
 - Abstract classes cannot be instantiated.
 
 
