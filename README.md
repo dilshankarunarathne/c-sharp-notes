@@ -1164,14 +1164,12 @@ public class TaxCalculator : ITaxCalculator
 
 ## Interfaces and Testability 
 
-- Unit testing is part of the automated practice which helps improve the quality of our
-code. With automated testing, we write code to test our own code. This helps catching
-bugs early on as we change the code.
-- In order to unit test a class, we need to isolate it. This means: we need to assume that
-every other class in our application is working properly and see if the class under test
-is working as expected.
+- Unit testing is part of the automated practice which helps improve the quality of our code. With automated testing, we write code to test our own code. This helps catching bugs early on as we change the code.
+- In order to unit test a class, we need to isolate it. This means: we need to assume that every other class in our application is working properly and see if the class under test is working as expected.
 - A class that has tight dependencies to other classes cannot be isolated.
 - To solve this problem, we use an interface. Here is an example:
+
+```cs
 public class OrderProcessor
 {
 private IShippingCalculator _calculator;
@@ -1181,10 +1179,9 @@ _calculator = calculator;
 }
 …
 }
-- So here, OrderProcessor is not dependent on the ShippingCalculator class. It’s only
-dependent on an interface (IShippingCalculator). If we change the code inside the
-ShippingCalculator (eg add a new method or change the method implementations) it
-will have no impact on OrderProcessor (as long as the interface is kept the same).
+```
+
+- So here, OrderProcessor is not dependent on the ShippingCalculator class. It’s only dependent on an interface (IShippingCalculator). If we change the code inside the ShippingCalculator (eg add a new method or change the method implementations) it will have no impact on OrderProcessor (as long as the interface is kept the same).
 
 ## Interfaces and Extensibility 
 
