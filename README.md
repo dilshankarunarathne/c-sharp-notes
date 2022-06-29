@@ -1119,8 +1119,17 @@ public class Circle : Shape
 - In a derived class, we need to override all abstract members of the base class, otherwise that derived class is going to be abstract too.
 - Abstract classes cannot be instantiated.
 
+## Sealed Classes and Members 
 
+- If applied to a class, prevents derivation from that class. 
+- If applied to a method, prevents overriding of that method in a derived class. 
+- The string class is declared as sealed, and that’s why we cannot inherit from it. 
 
+```cs
+public sealed class String
+{
+}
+```
 
 
 
