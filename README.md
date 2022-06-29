@@ -1194,15 +1194,9 @@ public class OrderProcessor
 
 ## Interfaces and Inheritance 
 
-
-- One of the common misconceptions about interfaces is that they are used to
-implement multiple inheritance in C#. This is fundamentally wrong, yet many books
-and videos make such a false claim.
-- With inheritance, we write code once and re-use it without the need to type all that
-code again.
-- With interfaces, we simply declare the members the implementing class should
-contain. Then we need to type all that declaration along with the actual implementation
-in that class. So, code is not inherited, even the declaration of the members!
+- One of the common misconceptions about interfaces is that they are used to implement multiple inheritance in C#. This is fundamentally wrong, yet many books and videos make such a false claim.
+- With inheritance, we write code once and re-use it without the need to type all that code again.
+- With interfaces, we simply declare the members the implementing class should contain. Then we need to type all that declaration along with the actual implementation in that class. So, code is not inherited, even the declaration of the members!
 
 
 
