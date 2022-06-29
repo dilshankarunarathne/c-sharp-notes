@@ -518,7 +518,9 @@ There are two types of multi dimentional arrays in C#.
 	};
 	```
 2. Jagged  
-   Sub arrays can have different number of elements. 
+   Sub arrays can have different number of elements.  
+   Example: jagged 2D array:
+   
 
 
 
