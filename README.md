@@ -897,7 +897,9 @@ A class member declared with private is accessible only from inside the class.
 We’ll learn about the other access modifiers when we get to the inheritance.  
 We use access modifiers to hide the implementation details of a class. So anything  
 that is about “how” a class does its job should be declared as private. This way, we make sure other parts of the code will not touch the implementation detail of a class. And as a result we improve the robustness of our code. If change the implementation
-of a class, we only need to make 
+of a class, we only need to make changes inside the class. No other parts of the code will need to be changed. 
+
+
 
 
 
