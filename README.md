@@ -403,6 +403,18 @@ else
 ```
 
 ```cs
+switch(role)
+{
+	case Role.Admin:
+		...
+		break;
+	case Role.User:
+		...
+		break;
+	default:
+		...
+		break;
+}
 
 ```
 
