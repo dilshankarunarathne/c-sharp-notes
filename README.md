@@ -603,6 +603,8 @@ There is yet another way to create a TimeSpan object. It is called `TimeSpan.Par
 
 <br />
 
+TimeSpan objects has properties such as `TotalHours`, `TotalMinutes`, `TotalSeconds` and `TotalMilliseconds`.  
+Also it has properties such as `Hours`, `Minutes`, `Seconds` and `Milliseconds`.  
 
 
 
