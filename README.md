@@ -814,10 +814,9 @@ Having too many `this()` calls considers bad practise because it is hard to unde
 
 # Methods 
 
-- Signature of a method consists of the number, type and order of its parameters.
-- Overloading a method means having a method with the same name but with different
-signatures. This makes it easier for the callers of the method to choose the more
-suitable signature depending on the type of data they have to pass to the method.
+Signature of a method consists of the number, type and order of its parameters. Overloading a method means having a method with the same name but with different signatures. This makes it easier for the callers of the method to choose the more suitable signature depending on the type of data they have to pass to the method. 
+
+```cs
 public class Point
 {
 public void Move(int x, int y) {}
@@ -832,11 +831,11 @@ public int Add(params int[] numbers) {}
 }
 …
 var result = calculator.Add(1, 2, 3, 4);
-- By default, when we pass a value type (eg int, char, bool) to a method, a copy of that
-variable is sent to the method. So changes applied to that variable in the method will
-not be visible upon return from the method. This can be modified using the ref
-modifier. When we use the ref modifier, a reference to the original variable will be sent
-to the target method.
+```
+
+By default, when we pass a value type (eg int, char, bool) to a method, a copy of that variable is sent to the method. So changes applied to that variable in the method will not be visible upon return from the method. This can be modified using the ref
+modifier. When we use the ref modifier, a reference to the original variable will be sent to the target method. 
+
 The ref modifier, in my opinion, is a smell in the design of the C# language. Please don’t use it when defining your methods.
 public void Weirdo(ref int a)
 {
