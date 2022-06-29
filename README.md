@@ -1150,7 +1150,10 @@ public interface ITaxCalculator
 ```cs
 public class TaxCalculator : ITaxCalculator
 {
-public void Calculate() { … }
+	public void Calculate() 
+	{ 
+		… 
+	}
 }
 ```
 
