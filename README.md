@@ -589,7 +589,13 @@ A more readable way to create a TimeSpan object is to use the `TimeSpan.FromHour
 var timeSpan = TimeSpan.FromHours(1);
 ```
 
-There is another way to create a TimeSpan object. If you have two DateTime objects, you can use the `Subtract()` method to get the duration between them.  
+There is another way to create a TimeSpan object. If you have two DateTime objects, you can use the `Subtract()` method to get the duration between them. 
+```cs
+var start = DateTime.Now;
+var end = DateTime.Now.AddHours(1);
+var duration = end.Subtract(start);	// or: var duration = end - start 
+Console.WriteLine("Duration: " + duration.ToString());
+```
 
 There is yet another way to create a TimeSpan object. It is called `TimeSpan.Parse()`. It takes a string as an argument and returns a TimeSpan object. 
 
