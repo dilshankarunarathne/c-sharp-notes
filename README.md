@@ -385,4 +385,46 @@ var method = (ShippingMethod)Enum.Parse(typeof(ShippingMethod),
 methodName);
 ```
 
+# Conditional Statements 
 
+```cs
+if (condition) 
+{
+	someStatement 
+}
+else if (anotherCondition)
+{
+	anotherStatement
+}
+else 
+{
+	yetAnotherStatement
+}
+```
+
+```cs
+
+```
+
+
+
+
+
+```cs
+
+```
+
+
+
+
+
+```cs
+
+```
+
+
+
+
+```cs
+
+```
