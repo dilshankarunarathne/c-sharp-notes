@@ -1010,8 +1010,7 @@ Your classes should be like a black box. They should have limited visibility fro
 ## Constructors and Inheritance 
 
 - Constructors are not inherited and need to explicitly defined in derived class.
-- When creating an object of a type that is part of an inheritance hierarchy, base class
-constructors are always executed first.
+- When creating an object of a type that is part of an inheritance hierarchy, base class constructors are always executed first.
 - We can use the base keyword to pass control to a base class constructor.
 
 
