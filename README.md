@@ -636,7 +636,10 @@ There is also a `Trim()` method that removes leading and trailing whitespace fro
 
 ## Searching 
 
+To search for a substring in a string, use the `IndexOf()` method. It takes a substring as an argument and returns the index of the first occurrence of the substring in the string.  
+There is also a `LastIndexOf()` method that returns the index of the last occurrence of the substring in the string.  
 
+If you want to search for a substring that may or may not be present in the string, use the `Contains()` method. It takes a substring as an argument and returns `true` if the string contains the substring. 
 
 
 
