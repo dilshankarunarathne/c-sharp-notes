@@ -694,7 +694,6 @@ String is an immutable class in the .NET framework. So, if you are working with 
 This class is a mutable class that can be used to build a string. It has methods to append strings, numbers, characters and other objects to the string. It is defined in the `System.Text` namespace.  
 It is good to modify and change on the fly. But unlike the String class, it is not good for searching and splitting. Instead it provides useful methods to manipulate strings like `Append()`, `Insert()`, `Remove()`, `Replace()`, `ToLower()`, `ToUpper()`, `Trim()`, `TrimStart()`, `TrimEnd()` and `ToTitleCase()`.  
 
-
 ```cs
 var stringBuilder = new StringBuilder();
 stringBuilder.Append("Hello");
