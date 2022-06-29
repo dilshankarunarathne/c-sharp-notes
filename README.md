@@ -724,6 +724,9 @@ Console.WriteLine(stringBuilder.ToString());
 
 # Procedural Programming 
 
-This is a programming paradigm that is based on prodecural calls. These procedural calls can be functions, routines, methods, subroutienes, etc. 
+This is a programming paradigm that is based on prodecural calls. These procedural calls can be functions, routines, methods, subroutienes, etc.  
+A real world applications can have a quite of number of functionalities. If we put all these inside a single function, it becomes a lot of code. So, it is good practice to break the code into smaller functions that each responsible for a certain task.  
+
+
 
 
