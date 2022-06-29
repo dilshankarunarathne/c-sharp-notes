@@ -808,9 +808,55 @@ public class Customer
 		this.Name = name;
 	}
 }
-```
+``` 
 
+Having too many `this()` calls considers bad practise because it is hard to understand what is happening. So, it is good practice to use the `this` keyword only when you need to call a constructor from another constructor. 
 
+# Methods 
+
+- Signature of a method consists of the number, type and order of its parameters.
+- Overloading a method means having a method with the same name but with different
+signatures. This makes it easier for the callers of the method to choose the more
+suitable signature depending on the type of data they have to pass to the method.
+public class Point
+{
+public void Move(int x, int y) {}
+// The Move method overloaded here
+public void Move(Point newLocation) {}
+}
+- We can use the params modifier to give a method the ability to receive varying
+number of parameters.
+public class Calculator
+{
+public int Add(params int[] numbers) {}
+}
+…
+var result = calculator.Add(1, 2, 3, 4);
+- By default, when we pass a value type (eg int, char, bool) to a method, a copy of that
+variable is sent to the method. So changes applied to that variable in the method will
+not be visible upon return from the method. This can be modified using the ref
+modifier. When we use the ref modifier, a reference to the original variable will be sent
+to the target method.
+The ref modifier, in my opinion, is a smell in the design of the C# language. Please don’t use it when defining your methods.
+public void Weirdo(ref int a)
+{
+a += 2;
+}
+…
+var a = 1;
+Weirdo(ref a);
+// Here a will be 3.
+- The out modifier can be used to return multiple values from a method. Any parameter
+declared with the out modifier is expected to receive a value at the end of the method.
+Again, this is a design smell and I’m totally against that. Don’t use it while declaring
+your methods.
+public void Weirdo(out int a)
+{
+a = 1;
+}
+…
+int a;
+Weirdo(out a);
 
 
 
