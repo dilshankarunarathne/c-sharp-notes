@@ -625,7 +625,9 @@ var timeSpan1 = TimeSpan.Parse("1:2:3");
 Console.WriteLine(timeSpan1.ToString());
 ```
 
+# String 
 
+String is an immutable class in the .NET framework. It is a class that represents a string of characters. 
 
 
 
