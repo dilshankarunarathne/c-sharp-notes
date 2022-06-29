@@ -434,7 +434,11 @@ foreach (var item in collection)
 ```
 
 ```cs
-
+while (i < 10)
+{
+	...
+	i++;
+}
 ```
 
 ```cs
