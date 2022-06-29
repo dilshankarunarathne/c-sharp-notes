@@ -577,7 +577,7 @@ Console.WriteLine(now.ToString("yyyy-MM-dd HH:mm:ss"));
 
 We can specify the format of the string using the `ToString()` method.  
 
-
+There is also a type called `TimeSpan` that represents a duration of time. 
 
 
 
