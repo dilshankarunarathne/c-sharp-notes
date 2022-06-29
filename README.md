@@ -706,4 +706,7 @@ stringBuilder.Insert(0, "This is a new string");
 stringBuilder.Remove(0, 10);
 stringBuilder.Replace("World", "Universe");
 
+Console.WriteLine(stringBuilder.ToString()); 
 
+stringBuilder.Clear();
+```
