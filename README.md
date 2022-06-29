@@ -491,7 +491,12 @@ var numbers = new int[10] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
 
 ## Multi Dimentional Arrays 
 
+There are two types of multi dimentional arrays in C#. 
 
+1. Rectangular  
+   Each sub array has the same number of elements. 
+2. Jagged  
+   Sub arrays can have different number of elements. 
 
 
 
