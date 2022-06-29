@@ -740,6 +740,13 @@ Everytime we use these static methods, the systems runs a security check to see 
 
 The `Directory` and `DirectoryInfo` classes are used to work with directories. They provide methods for creating, copying, moving, deleting and opening directories. The `DirectoryInfo` class is used to get information about a directory and it provides **instance methods**. The `Directory` class provides static methods.  
 
-There is also a `Path` class that is used to work with paths. It provides methods for parsing and combining paths. 
+There is also a `Path` class that is used to work with paths. It provides methods for parsing and combining paths.  
+`GetTempPath()` returns the path of the temporary directory.  
+`GetTempFileName()` returns the path of the temporary file.  
+`GetFileName()` returns the name of the file.  
+`GetDirectoryName()` returns the name of the directory.  
+`GetExtension()` returns the extension of the file.  
+
+
 
 
