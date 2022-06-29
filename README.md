@@ -722,6 +722,8 @@ stringBuilder.AppendLine("Hello")
 Console.WriteLine(stringBuilder.ToString());
 ```
 
+# Procedural Programming 
 
+This is a programming paradigm that is based on prodecural calls. These procedural calls can be functions, routines, methods, subroutienes, etc. 
 
 
