@@ -575,6 +575,8 @@ Console.WriteLine(now.ToShortTimeString());
 Console.WriteLine(now.ToString("yyyy-MM-dd HH:mm:ss"));
 ```
 
+We can specify the format of the string using the `ToString()` method.  
+
 
 
 
