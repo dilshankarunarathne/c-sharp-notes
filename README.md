@@ -775,8 +775,9 @@ var customer = new Customer();
 
 A constructor is a method that is called when an instance of a class is created. We use constructors to put an object in an early state. 
 As a best practice, define a constructor only when an object “needs” to be initialised or it won’t be able to do its job.  
-Constructors do not have a return type, not even void, and they should have the exact same name as the class.  
-A quick way to create a constructor: type ctor and press tab. This is a code snippet.  
+Constructors do not have a return type, not even void, and they should have the exact same name as the class. 
+
+Constructors can be overloaded. Overloading means creating a method with the same name and different signatures. Signature of a method consists of the number, type and order of its parameters. We can pass control from one constructor to the other by using the `this` keyword.
 
 
 
