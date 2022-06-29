@@ -641,7 +641,10 @@ There is also a `LastIndexOf()` method that returns the index of the last occurr
 
 If you want to search for a substring that may or may not be present in the string, use the `Contains()` method. It takes a substring as an argument and returns `true` if the string contains the substring. 
 
+## Substrings 
 
+To get a substring from a string, use the `Substring()` method. It takes two arguments: the starting index and the length of the substring.  
+If we do not provide the length of the substring, it will return the substring from the starting index to the end of the string.  
 
 
 
