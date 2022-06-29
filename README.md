@@ -1172,12 +1172,15 @@ public class TaxCalculator : ITaxCalculator
 ```cs
 public class OrderProcessor
 {
-private IShippingCalculator _calculator;
-public Customer(IShippingCalculator calculator)
-{
-_calculator = calculator;
-}
-…
+	private IShippingCalculator _calculator;
+
+	public Customer(IShippingCalculator calculator)
+	{
+		_calculator = calculator;
+	}
+
+	…
+
 }
 ```
 
