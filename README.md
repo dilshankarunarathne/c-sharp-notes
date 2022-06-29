@@ -651,6 +651,11 @@ To replace a substring in a string, use the `Replace()` method. It takes two arg
 
 ## Null checking 
 
+To check if a string is null or empty, use the `IsNullOrEmpty()` method. It takes a string as an argument and returns `true` if the string is null or empty.  
 
+To check if a string contains whitespace, use the `IsWhiteSpace()` method. It takes a string as an argument and returns `true` if the string contains whitespace. There is also a `IsNullOrWhiteSpace()` method that returns `true` if the string is null or empty or contains only whitespace.
 
+## Splitting 
+
+To split a string into an array of strings, use the `Split()` method. It takes a string as an argument and returns an array of strings. 
 
