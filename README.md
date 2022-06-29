@@ -771,7 +771,9 @@ Customer customer = new Customer();
 var customer = new Customer();
 ```
 
+# Constructors 
 
+A constructor is a method that is called when an instance of a class is created. We use constructors to put an object in an early state. 
 
 
 
