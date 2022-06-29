@@ -999,7 +999,7 @@ Having said all that, it doesn’t mean inheritance should be avoided at all tim
 
 ## Access Modifiers 
 
-- Your classes should be like a black box. They should have limited visibility from the outside. The implementation, the detail, should be hidden. We use access modifiers (mostly private) to achieve this. This is referred to as Information Hiding (and sometimes Encapsulation) in object-oriented programming.
+Your classes should be like a black box. They should have limited visibility from the outside. The implementation, the detail, should be hidden. We use access modifiers (mostly private) to achieve this. This is referred to as Information Hiding (and sometimes Encapsulation) in object-oriented programming.
 - Public: A member declared as public is accessible everywhere.
 - Private: A member declared as private is accessible only from the class.
 - Protected: A member declared as protected is accessibly only from the class and its
