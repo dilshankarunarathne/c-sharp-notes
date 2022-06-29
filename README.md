@@ -520,7 +520,15 @@ There are two types of multi dimentional arrays in C#.
 2. Jagged  
    Sub arrays can have different number of elements.  
    Example: jagged 2D array:
-   
+   ```cs
+   var matrix = new int[3][];
+   var matrix = new int[3][] 
+   {
+		new int[] { 1, 2, 3 },
+		new int[] { 4, 5, 6, 9 },
+		new int[] { 7, 8 }
+	};
+	```
 
 
 
