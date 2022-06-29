@@ -581,6 +581,7 @@ There is also a type called `TimeSpan` that represents a duration of time. There
 The simplest way is to use the `new` operator. One of the overloaded constructors takes a number of hours, minutes and seconds as arguments. 
 ```cs
 var timeSpan = new TimeSpan(1, 2, 3);
+var timeSpan1 = new TimeSpan(1, 0, 0);
 ```
 
 
