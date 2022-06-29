@@ -961,22 +961,28 @@ affect many other classes.
 - A kind of relationship between two classes that allows one to inherit code from the
 other.
 - Referred to as Is-A relationship: A Car is a Vehicle
-- Benefits: code re-use and polymorphic behaviour.
+- Benefits: code re-use and polymorphic behaviour. 
+
+```cs
 public class Car : Vehicle
 {
 }
+```
 
 ## Composition 
 
 - A kind of relationship that allows one class to contain another.
 - Referred to as Has-A relationship: A Car has an Engine
-- Benefits: Code re-use, flexibility and a means to loose-coupling
+- Benefits: Code re-use, flexibility and a means to loose-coupling 
+
+```cs
 public class DbMigrator
 {
 // We re-use the code in the logger class without
 // the need to repeat that logic here in DbMigrator
 private Logger _logger;
 }
+```
 
 ## Favour Composition over Inheritance 
 
