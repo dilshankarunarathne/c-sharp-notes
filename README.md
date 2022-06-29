@@ -495,6 +495,16 @@ There are two types of multi dimentional arrays in C#.
 
 1. Rectangular  
    Each sub array has the same number of elements. 
+   For example, if you have a 3x3 matrix, you have 3 sub arrays, each with 3 elements.
+   ```cs
+   var matrix = new int[3, 3];
+   var matrix = new int[3, 3] 
+   { 
+		{ 1, 2, 3 }, 
+		{ 4, 5, 6 }, 
+		{ 7, 8, 9 } 
+   };
+   ```
 2. Jagged  
    Sub arrays can have different number of elements. 
 
